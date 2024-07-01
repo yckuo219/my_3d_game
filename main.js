@@ -1,3 +1,14 @@
+// main.js
+
+if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+} else {
+    firebase.app(); // 如果已经初始化，则使用现有实例
+}
+
+const db = firebase.database();
+const auth = firebase.auth();
+
 // Firebase 配置
 var firebaseConfig = {
   apiKey: "AIzaSyAMM1u5DTfXDUi-2ZBWx9D5MRjm17jdu_w",
